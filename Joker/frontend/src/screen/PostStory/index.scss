@@ -1,0 +1,116 @@
+@import './../../base';
+
+@mixin buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+      @include mobile {
+            flex-direction: column;
+      }
+ 
+      button {
+            color: #0085a3 ;
+            border: .5rem solid #0085a3;
+            outline-color: #0085a3;
+            border-radius: 1rem;
+            font-size: 1.6rem;
+            padding: 1rem;
+            width: 30%;
+            transition: .2s linear;
+
+            @include mobile {
+                  margin: .5rem 0;
+                  width: 100%;
+            } 
+      }
+      button:hover {
+            background:#0085a3 ;
+            color: #fff;
+            border-color: #fff;
+            a {
+                  color: #fff;
+            }
+      }
+}
+
+.bg-postStory {
+      background-image: url('../../Image/background.jpg');
+      background-size: cover;
+      height: 100vh;
+      padding: 0 2rem;
+
+      .Container-postStory {
+            width: 90rem;
+            margin: auto;
+            @include mobile {
+                  width: auto;
+            }
+            @include tablet {
+                  width: auto;
+            }
+            .title {
+                  font-family: Fascinate Inline;
+                  background-image: linear-gradient(180deg, #fff, #87f1ff);
+                  font-weight:bold;
+                  background-size:100%;
+                  background-clip:text;
+                  -webkit-background-clip:text;
+                  -webkit-text-fill-color:transparent;
+                  -moz-background-clip:text;
+                  -moz-text-fill-color:transparent;
+                  filter: drop-shadow(2px 2px #0085a3);
+                  font-size:4rem;
+                  padding: 3rem 0 ;
+                  text-align: center;
+            }
+            .content-story, input{
+                  color: #0085a3 ;
+                  width: 100%;
+                  border: .5rem solid #0085a3;
+                  outline-color: #0085a3;
+                  border-radius: 1rem;
+                  font-size: 1.6rem;
+                  padding: 1rem;
+            }
+            .buttons {
+                  @include buttons;
+            }
+            
+      }
+
+      .Box-check {
+            width: 40rem;
+            height: 20rem;
+            padding: 3rem ;
+            background: #0085a3 ;
+            border-radius: 1rem;
+            position: fixed;
+            top: 30%;
+            left: 34%;
+            z-index: 2;
+
+            @include mobile {
+                  width: 30rem;
+                  padding: 2rem;
+                  top: 26%;
+                  left: 10%
+            }
+            @include tablet {
+                  top: 30%;
+                  left: 34%;
+            }
+            h1 {
+                  text-align: center;
+                  color: #fff;
+            }
+
+            .buttons {
+                  @include buttons;
+
+            }
+
+      }
+}

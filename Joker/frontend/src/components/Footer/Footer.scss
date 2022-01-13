@@ -1,0 +1,33 @@
+@import '../../base';
+
+.Footer{
+      background: #fff;
+      padding: 4rem 18rem 2rem;
+      @include mobile {
+            padding: 2rem;
+
+      }
+      @include tablet  {
+            padding: 6rem;
+      }
+      .paragrap {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 1.6rem;
+            color:  #33333385;
+
+            @include mobile {
+                  text-align: justify;
+                  font-size: 1.4rem;
+            }
+
+            @include tablet {
+                  font-size: 1.2rem;
+            }
+      }
+      .copy-right {
+            text-align: center;
+            font-size: 1.4rem;
+            color: #333;
+      }
+}

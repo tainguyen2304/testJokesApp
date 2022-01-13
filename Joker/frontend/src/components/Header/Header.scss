@@ -1,0 +1,70 @@
+@import '../../base';
+
+.Header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 7rem;
+      padding: 1rem 16rem;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fbfafa;
+      z-index: 1;
+      box-shadow: 1px 1px 1rem #ddd;
+      @include mobile {
+            padding: 1rem 2rem;
+      }
+      @include tablet {
+            padding: 1rem 8rem;
+      }
+      img {
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+      }
+      
+      .info-user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .post-story {
+                  margin-right: 1rem;
+                  padding: 1.2rem;
+                  border: 1px solid green;
+                  border-radius: 1rem;
+                  font-size: 1.4rem;
+                  transition: .5s ease ;
+                  opacity: .7;
+                  a {
+                        color: green;
+                  }
+            }
+            .post-story:hover {
+                  background-color: green;
+                  border-color: #fff;
+                  a {
+                        color: #fff;
+                  }
+
+            }
+
+            .username {
+                  margin-right: 1rem;
+                  margin-top: 1rem;
+                  p {
+                        font-size: 1.2rem;
+                        text-align: right;
+                        line-height: .5rem;
+                  }
+                  .handicrefted {
+                        color:  #bbbaba;
+                        font-style: italic;
+                        margin: 0;
+                  }
+            }
+
+      }
+}
